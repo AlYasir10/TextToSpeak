@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to speech | Javascript</title>
+    <link rel="stylesheet" href="tts.css">
+</head>
+<body>
+    <header><h2>TEXT  TO SPEACH</h2></header>
+    <div class="container">
+        <Textarea id="txt" cols="30" rows="5"></Textarea>
+        <button id="btn">speak</button>
+    </div>
+    <div class="pff">press ENTER to speak!</div>
+    <script>
+        let txt = document.getElementById("txt");
+        let btn = document.getElementById("btn");
+
+        btn.addEventListener("click", function () {
+            let text = txt.value;
+            let utterance = new SpeechSynthesisUtterance(text);
+            utterance.lang = "tr";
+            speechSynthesis.speak(utterance);
+            
+        });
+
+        document.getElementById("txt")
+        .addEventListener("keyup", function(event) {
+        event.preventDefault();
+            if (event.keyCode === 13) {
+        document.getElementById("btn").click();
+        }
+        });
+    </script>
+</body>
+</html>
