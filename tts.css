@@ -1,0 +1,41 @@
+body{
+    background-color: black;
+}
+header{
+    font-size: x-large;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    font-family: Copperplate, Papyrus, fantasy;
+    font-weight: 900;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    
+}
+#txt{
+    background-color: rgb(81, 81, 81);
+    margin: 34px;
+    height: 320px;
+    font-size: xx-large;
+    color: rgb(11, 253, 39);
+    font-family: cursive;
+}
+#btn{
+    border: 2px solid rgb(9, 236, 252);
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-radius: 7px;
+    height: 33px;
+    width: 65px;
+}
+.pff{
+    color: rgb(0, 242, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 120%;
+}
